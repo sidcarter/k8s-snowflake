@@ -5,7 +5,7 @@ set -o pipefail
 # From https://github.com/kubernetes/kubernetes/releases
 # OR
 # curl -sSL https://storage.googleapis.com/kubernetes-release/release/stable.txt
-KUBERNETES_VERSION=v1.8.3
+KUBERNETES_VERSION=v1.8.5
 
 # From https://github.com/containernetworking/plugins/releases
 # OR
