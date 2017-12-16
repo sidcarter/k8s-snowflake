@@ -5,7 +5,7 @@ set -o pipefail
 # From https://github.com/kubernetes/kubernetes/releases
 # OR
 # curl -sSL https://storage.googleapis.com/kubernetes-release/release/stable.txt
-KUBERNETES_VERSION=v1.8.5
+KUBERNETES_VERSION=v1.9.0
 
 # From https://github.com/containernetworking/plugins/releases
 # OR
@@ -15,12 +15,12 @@ CNI_VERSION=v0.6.0
 # From https://github.com/Azure/azure-container-networking/releases
 # OR
 # curl -sSL https://api.github.com/repos/Azure/azure-container-networking/releases/latest | jq .tag_name
-AZURE_CNI_VERSION=v0.91
+AZURE_CNI_VERSION=v1.0.0
 
 # From https://github.com/kubernetes-incubator/cri-containerd/releases
 # OR
 # curl -sSL https://api.github.com/repos/kubernetes-incubator/cri-containerd/releases/latest | jq .tag_name
-CRI_CONTAINERD_VERSION=1.0.0-alpha.1
+CRI_CONTAINERD_VERSION=1.0.0-beta.0
 
 install_cni() {
 	local download_uri="https://github.com/containernetworking/plugins/releases/download/${CNI_VERSION}/cni-plugins-amd64-${CNI_VERSION}.tgz"
